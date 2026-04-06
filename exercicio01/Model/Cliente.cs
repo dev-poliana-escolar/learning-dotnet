@@ -1,4 +1,4 @@
-﻿namespace exercicio01.Model;
+﻿namespace exercicio01.Model.Cliente;
 
 public class Cliente
 {

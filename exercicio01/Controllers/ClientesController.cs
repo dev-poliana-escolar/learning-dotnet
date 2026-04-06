@@ -1,4 +1,4 @@
-using exercicio01.Model;
+using exercicio01.Model.Cliente;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
