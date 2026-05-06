@@ -1,0 +1,34 @@
+@exemplo05_HostAddress = http://localhost:5182
+
+GET {{exemplo05_HostAddress}}/api/clientes
+Accept: application/json
+
+###
+
+GET {{exemplo05_HostAddress}}/api/clientes/2
+Accept: application/json
+
+###
+
+POST {{exemplo05_HostAddress}}/api/clientes
+Content-Type: application/json
+
+{
+  "nome": "Maria Silva",
+  "email": "maria.silva@example.com"
+}
+
+###
+
+PUT {{exemplo05_HostAddress}}/api/clientes/2
+Content-Type: application/json
+
+{
+  "codigo": 2,
+  "nome": "João Pereira",
+  "email": "joao.pereira@example.com"
+}
+
+###
+
+DELETE {{exemplo05_HostAddress}}/api/clientes/2
