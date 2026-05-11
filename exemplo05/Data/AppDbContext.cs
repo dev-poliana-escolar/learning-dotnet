@@ -19,7 +19,16 @@ public class AppDbContext : DbContext
             entity.Property(e => e.Nome).IsRequired().HasMaxLength(50);
             entity.Property(e => e.Email).IsRequired().HasMaxLength(50);
         });
+
+        modelBuilder.Entity<Usuario>(entity =>
+        {
+            entity.HasKey(e => e.Id);
+            entity.Property(e => e.Nome).IsRequired().HasMaxLength(50);
+            entity.Property(e => e.Email).IsRequired().HasMaxLength(50);
+            entity.Property(e => e.Senha).IsRequired().HasMaxLength(50);
+        });
     }
 
     public DbSet<Cliente> Clientes { get; set; }
+    public DbSet<Usuario> Usuarios { get; set; }
 }

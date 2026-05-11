@@ -32,3 +32,47 @@ Content-Type: application/json
 ###
 
 DELETE {{exemplo05_HostAddress}}/api/clientes/2
+
+###
+
+GET {{exemplo05_HostAddress}}/api/usuarios
+Accept: application/json
+
+###
+
+GET {{exemplo05_HostAddress}}/api/usuarios/1
+Accept: application/json
+
+###
+
+POST {{exemplo05_HostAddress}}/api/usuarios
+Content-Type: application/json
+
+{
+  "nome": "Maria da Silva",
+  "email": "maria.silva@example.com",
+  "senha": "teste123"
+}
+
+###
+PUT {{exemplo05_HostAddress}}/api/usuarios/2
+Content-Type: application/json
+
+{
+  "id": 2,
+  "nome": "João Pereira",
+  "email": "joao.pereira@example.com",
+  "senha": "nova senha"
+}
+
+###
+DELETE {{exemplo05_HostAddress}}/api/usuarios/2
+
+###
+POST {{exemplo05_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "marcelo@ifrn.edu.br",
+  "senha": "123"
+}
