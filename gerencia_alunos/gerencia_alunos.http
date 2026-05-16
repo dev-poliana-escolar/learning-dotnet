@@ -1,6 +1,44 @@
 @gerencia_alunos_HostAddress = http://localhost:5298
 
-GET {{gerencia_alunos_HostAddress}}/weatherforecast/
-Accept: application/json
+
+
+
+POST {{gerencia_alunos_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "123456"
+}
 
 ###
+
+GET {{gerencia_alunos_HostAddress}}/api/aluno
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNzc4OTQ1MTIxLCJleHAiOjE3Nzg5NTU5MjEsImlhdCI6MTc3ODk0NTEyMX0.rTPlbvg2Ewks3t7d0_7aalVxqmHKxKOcQZKMYOUUYjo
+
+###
+
+POST {{gerencia_alunos_HostAddress}}/api/aluno
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNzc4OTQ1MTIxLCJleHAiOjE3Nzg5NTU5MjEsImlhdCI6MTc3ODk0NTEyMX0.rTPlbvg2Ewks3t7d0_7aalVxqmHKxKOcQZKMYOUUYjo
+
+{
+  "nome": "Poliana",
+  "email": "poliana@example.com",
+  "curso": "Engenharia de Software",
+  "dataNascimento": "2005-05-31"
+
+}
+
+###
+POST {{gerencia_alunos_HostAddress}}/api/aluno
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNzc4OTQ1MTIxLCJleHAiOjE3Nzg5NTU5MjEsImlhdCI6MTc3ODk0NTEyMX0.rTPlbvg2Ewks3t7d0_7aalVxqmHKxKOcQZKMYOUUYjo
+
+{
+    "nome": "João",
+    "email": "joao@example.com",
+    "curso": "Ciência da Computação",
+    "dataNascimento": "2004-10-15"
+}
