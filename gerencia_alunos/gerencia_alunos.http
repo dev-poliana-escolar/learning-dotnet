@@ -42,3 +42,22 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6I
     "curso": "Ciência da Computação",
     "dataNascimento": "2004-10-15"
 }
+
+###
+
+PUT {{gerencia_alunos_HostAddress}}/api/aluno/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNzc4OTQ1MTIxLCJleHAiOjE3Nzg5NTU5MjEsImlhdCI6MTc3ODk0NTEyMX0.rTPlbvg2Ewks3t7d0_7aalVxqmHKxKOcQZKMYOUUYjo
+
+{
+    "id": 1,
+    "nome": "Poliana Pinheiro",
+    "email": "poliana@example.com",
+    "curso": "Tecnologo em Sistemas para Internet",
+    "dataNascimento": "2005-05-31"
+} 
+
+###
+
+DELETE {{gerencia_alunos_HostAddress}}/api/aluno/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNzc4OTQ1MTIxLCJleHAiOjE3Nzg5NTU5MjEsImlhdCI6MTc3ODk0NTEyMX0.rTPlbvg2Ewks3t7d0_7aalVxqmHKxKOcQZKMYOUUYjo
